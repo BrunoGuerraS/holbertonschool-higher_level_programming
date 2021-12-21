@@ -2,9 +2,8 @@
 i = 0
 coma = ","
 while i < 100:
-    print("{:d}".format(i), end='')
     if i != 99:
-        print("{:s}".format(coma), end=' ')
+        print("{:d}{:s}".format(i, coma), end=' ')
     else:
-        print("")
+        print("{:d}".format(i))
     i += 1
