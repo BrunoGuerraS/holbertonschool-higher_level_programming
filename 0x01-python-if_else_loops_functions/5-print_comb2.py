@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 i = 0
-o = 0
 coma = ", "
 while i < 100:
-    if i < 10:
-        print(o,end='')
-        print(i,end='')
-        print(", ",end='')
-    elif 10 <= i < 99:
-        print("{:d}{:s}".format(i,coma), end='')
+    if i != 99:
+        print("{:02d}{:s}".format(i, coma), end='')
     else:
         print("{:d}".format(i))
+        
     i += 1
