@@ -4,9 +4,8 @@
 #include "lists.h"
 /**
  * insert_node - inserts a number in an ordered linked list
- * @head: double pointer to the linked list
- * @number: number to insert in the new node
- *
+ * @head: double pointer 
+ * @number: number 
  * Return: address of the new node, or NULL
  */
 listint_t *insert_node(listint_t **head, int number)
