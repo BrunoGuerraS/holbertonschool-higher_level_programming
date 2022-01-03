@@ -2,6 +2,8 @@
 def print_matrix_integer(matrix=[[]]):
     i = 0
     e = 0
+    if matrix == None:
+        return(None)
     while i < (len(matrix)):
         while e < (len(matrix[i])):
             print("{:d}".format(matrix[i][e]), end=" ")
