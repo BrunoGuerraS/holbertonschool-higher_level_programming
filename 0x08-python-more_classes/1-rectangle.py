@@ -1,4 +1,4 @@
-# /usr/bin/python3
+#!/usr/bin/python3
 ''' this project is about classes and object '''
 
 
@@ -8,7 +8,7 @@ class Rectangle:
         ''' initializing w and h'''
         self.height = height
         self.width = width
-    
+
     @property
     def width(self):
         '''hight of rectangle'''
@@ -21,7 +21,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-    
+
     @property
     def height(self):
         '''width of rectangle'''
