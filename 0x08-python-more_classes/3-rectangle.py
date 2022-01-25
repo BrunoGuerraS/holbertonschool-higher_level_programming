@@ -2,9 +2,6 @@
 ''' this project is about classes and object '''
 
 
-from wsgiref.simple_server import WSGIRequestHandler
-
-
 class Rectangle:
     ''' class rectangle '''
     def __init__(self, width=0, height=0):
