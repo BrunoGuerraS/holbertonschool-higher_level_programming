@@ -55,6 +55,6 @@ class Rectangle:
             if i is not self.__height - 1:
                 an_str = an_str + '\n'
         return an_str
-    
+
     def __repr__(self):
         return ("Rectangle({}, {})".format(self.width, self.height))
