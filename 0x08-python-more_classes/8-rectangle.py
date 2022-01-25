@@ -2,9 +2,6 @@
 ''' this project is about classes and object '''
 
 
-from random import getstate
-
-
 class Rectangle:
     ''' class rectangle '''
     number_of_instances = 0
