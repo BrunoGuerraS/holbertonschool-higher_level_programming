@@ -9,8 +9,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         ''' initializing w and h'''
-        self.height = height
         self.width = width
+        self.height = height
         Rectangle.number_of_instances += 1
 
     @property
@@ -80,8 +80,6 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        if size < 0:
-            raise ValueError("size most be begger than 0")
         width = size
         height = size
         return cls(width, height)
