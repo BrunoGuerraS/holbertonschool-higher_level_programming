@@ -1,0 +1,26 @@
+``matrix_divided`` module
+======================
+1. Divide a matrix
+======================
+Write a function that divides all elements of a matrix.
+    * Prototype: def matrix_divided(matrix, div):
+    * matrix must be a list of lists of integers or floats
+    * Returns a new matrix
+    * You are not allowed to import any module
+======================
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [[89, 2, 33], [4, 77, 16,]]
+>>> div = 3
+>>> matrix_divided(matrix, div)
+[[1.33, 25.67, 5.33], [1.33, 25.67, 5.33]]
+
+=======================
+
+>>> matrix = [[0, 2, 0], [4, 0, 16,]]
+>>> div = 0
+>>> matrix_divided(matrix, div)
+Traceback (most recent call last):
+ ...
+ZeroDivisionError: division by zero

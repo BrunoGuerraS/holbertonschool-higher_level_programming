@@ -1,0 +1,28 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(8, 9)
+17
+>>> add_integer(7.8, 9.6)
+16
+>>> add_integer(-2, -4)
+-6
+
+>>> add_integer(, -2)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+>>> add_integer(-2, )
+96
+
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> a = float('inf')
+>>> b = 10
+>>> add_integer(a, b)
+Traceback (most recent call last):
+  ...
+OverflowError: cannot convert float infinity to integer
