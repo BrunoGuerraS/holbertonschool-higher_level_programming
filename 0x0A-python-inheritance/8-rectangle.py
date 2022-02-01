@@ -13,6 +13,7 @@ class BaseGeometry:
     def area(self):
         raise Exception("area() is not implemented")
 
+
 class Rectangle(BaseGeometry):
     ''' take a base geometry and add width and height'''
     def __init__(self, width, height):
