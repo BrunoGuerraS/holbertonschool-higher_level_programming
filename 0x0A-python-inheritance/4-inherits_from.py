@@ -7,4 +7,6 @@ from the specified class ; otherwise False
 
 def inherits_from(obj, a_class):
     ''' nherits_from use issubclass'''
-    return not issubclass(a_class, type(obj))
+    if type(obj) is a_class:
+        return False
+    return  isinstance(obj, a_class)
