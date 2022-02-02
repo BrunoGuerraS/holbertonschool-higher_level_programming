@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Use the module for adds all argument 
+""" Use the module for adds all argument
     to a Python list
 """
 import sys
