@@ -3,7 +3,7 @@
 
 
 import json
-""" Import module json for use method dumps 
+""" Import module json for use method dumps
     for serialized
 """
 
