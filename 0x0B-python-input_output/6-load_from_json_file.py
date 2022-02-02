@@ -3,7 +3,6 @@
 
 
 import json
-from tkinter.messagebox import RETRY
 """ Import module json for use method dumps
     for serialized
 """
