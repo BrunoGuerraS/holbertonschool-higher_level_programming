@@ -10,6 +10,6 @@ from tkinter.messagebox import RETRY
 
 
 def save_to_json_file(my_obj, filename):
-    ''' save_to_json_file function'''
+    ''' save_to_json_file function '''
     with open(filename, 'r') as file:
         return json.loads(file.read())
