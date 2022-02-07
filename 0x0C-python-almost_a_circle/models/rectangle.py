@@ -1,5 +1,5 @@
 # /usr/bin/python3
-from base import Base
+from models.base import Base
 ''' we create a class reactangle'''
 
 
@@ -19,11 +19,11 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self. value):
+    def width(self, value):
         ''' '''
         self.__width = value
 
-    @propery
+    @property
     def height(self):
         ''' ''' 
         return self.__height
