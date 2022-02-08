@@ -23,3 +23,14 @@ class Square(Rectangle):
         """Return a string with rectangle to stdout"""
         return "[Square] ({}) {}/{} - {}".format(
             self.id, self.x, self.y, self.width)
+    
+    def update(self, *args, **kwargs):
+        ''' assings attributes'''
+        keys = ["id", "size", "x", "y"]
+        if len(args) > 0:
+            for i in range(len(args)):
+                setattr(self, keys[i], args[i])
+        else:
+            for key in kwargs:
+                if hasattr(self, key) is True:
+                    setattr(self, key, kwargs[key])
