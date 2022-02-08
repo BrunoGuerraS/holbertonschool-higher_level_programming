@@ -76,12 +76,16 @@ class Rectangle(Base):
 
     def display(self):
         ''' this method print a picture by # '''
+        for i in range(self.__y):
+            print()
         for i in range(self.__height):
-            print("{}".format('#'*self.__width), end='')
-            print("")
+            print(" " * self.__x, end='')
+            print('#' * self.__width)
 
     def __str__(self):
         ''' represent the object members in string format'''
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height
         )
+    
+
