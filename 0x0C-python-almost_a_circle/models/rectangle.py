@@ -93,7 +93,7 @@ class Rectangle(Base):
         if args is not None and len(args) != 0:
             for i in range(len(args)):
                 setattr(self, (list(self.__dict__.keys()))[i], args[i])
-        else: 
+        else:
             for key in kwargs:
                 if hasattr(self, key) is True:
                     setattr(self, key, kwargs[key])
