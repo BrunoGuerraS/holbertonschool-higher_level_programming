@@ -23,7 +23,7 @@ class Square(Rectangle):
         """Return a string with rectangle to stdout"""
         return "[Square] ({}) {}/{} - {}".format(
             self.id, self.x, self.y, self.width)
-    
+
     def update(self, *args, **kwargs):
         ''' assings attributes'''
         keys = ["id", "size", "x", "y"]
