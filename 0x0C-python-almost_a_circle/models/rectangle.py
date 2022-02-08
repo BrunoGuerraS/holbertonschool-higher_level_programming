@@ -73,3 +73,9 @@ class Rectangle(Base):
     def area(self):
         ''' this method give us a area'''
         return self.__height * self.__width
+
+    def display(self):
+        ''' this method print a picture by # '''
+        for i in range(self.__height):
+            print("{}".format('#'*self.__width), end='')
+            print("")
