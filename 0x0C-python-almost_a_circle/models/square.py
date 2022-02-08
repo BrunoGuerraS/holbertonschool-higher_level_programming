@@ -34,3 +34,10 @@ class Square(Rectangle):
             for key in kwargs:
                 if hasattr(self, key) is True:
                     setattr(self, key, kwargs[key])
+
+    def to_dictionary(self):
+        ''' returns the dictionary representation '''
+        return dict(zip(
+            ["id", "size", "x", "y"],
+            [self.id, self.size, self.x, self.y]
+        ))
