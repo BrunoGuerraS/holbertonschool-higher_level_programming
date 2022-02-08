@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 ''' we create a class reactangle'''
+from csv import list_dialects
 from models.base import Base
 
 
@@ -87,3 +88,13 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height
         )
+
+    def update(self, *args, **kwargs):
+        ''' assigns attributes'''
+        if args is not None or len(args) != 0:
+            for i in range(len(args)):
+                setattr(self, (list(self.__dict__.keys()))[i], args[i])
+        elif kwargs is not None:
+            for key in kwargs:
+                if hasattr(self, key) is True:
+                    setattr(self, key, kwargs[key])
