@@ -1,3 +1,7 @@
 #!/usr/bin/node
-const mes = 'C is fun\nPython is cool\nJavaScript is amazing';
-console.log(mes);
+let myVar = 'C is fun';
+console.log(myVar);
+myVar = 'Python is cool';
+console.log(myVar);
+myVar = 'JavaScript is amazing';
+console.log(myVar); 
