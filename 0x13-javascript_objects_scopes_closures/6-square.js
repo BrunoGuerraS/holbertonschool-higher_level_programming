@@ -6,12 +6,12 @@ class Square extends Rectangle {
   }
 
   charPrint (c) {
-    if ((!c) || (c === undefined)) {
+    if (!c) {
       this.print();
     } else {
       const area = [];
       for (let i = 0; i < this.width; i++) {
-        area.push('C');
+        area.push(c);
       }
       for (let j = 0; j < this.height; j++) {
         console.log(area.join(''));
