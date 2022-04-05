@@ -6,7 +6,7 @@ class Square extends Rectangle {
   }
 
   charPrint (c) {
-    if (!c) {
+    if ((!c) || (c === undefined)) {
       this.print();
     } else {
       const area = [];
