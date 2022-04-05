@@ -1,13 +1,4 @@
 #!/usr/bin/node
-if (!process.argv[2] || parseInt(process.argv[2]) === 1) {
-  console.log(0);
-} else {
-  const list = [];
-  for (let i = 2; i < process.argv.length; i++) {
-    list.push(parseInt(process.argv[i]));
-  }
-  list.sort(function (a, b) {
-    return (b - a);
-  });
-  console.log(list[0]);
-}
+const list = process.argv.splice(2).map((e) => parseInt(e)).sort((a, b) => b - a);
+if (list.length <= 1) console.log(0);
+else console.log(list[1]);
