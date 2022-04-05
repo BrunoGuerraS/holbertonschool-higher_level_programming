@@ -4,7 +4,7 @@ if (!process.argv[2] || parseInt(process.argv[2]) === 1) {
 } else {
   const list = [];
   for (let i = 2; i < process.argv.length; i++) {
-    list.push(process.argv[i]);
+    list.push(parseInt(process.argv[i]));
   }
   list.sort(function (a, b) {
     return (b - a);
