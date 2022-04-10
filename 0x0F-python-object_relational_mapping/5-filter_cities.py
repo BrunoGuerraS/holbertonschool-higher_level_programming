@@ -13,12 +13,16 @@ def conection():
         return 0
 
     cur = db.cursor()
-    instructions = "SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC"
-    cur.execute(instructions, (argv[4],))
+    instruction = "SELECT c.name FROM cities AS c JOIN states AS s ON \
+    c.state_id=s.id WHERE s.name='{name}' ORDER BY c.state_id ASC"
+    cur.execute(instruction.format(name=argv[4]))
     rows = cur.fetchall()
     for row in rows:
-        if row[1] == argv[4]:
-            print(row)
+        if row != rows[-1]:
+            print(row[0], end=", ")
+        else:
+            print(row[0], end="")
+    print()
     cur.close()
     db.close()
 

@@ -16,8 +16,9 @@ def conection():
         return 0
 
     cur = db.cursor()
-    instruc = "SELECT * FROM states WHERE BINARY name=%s ORDER BY id"
-    cur.execute(instruc, (argv[4],))
+    instruc = "SELECT * FROM states WHERE BINARY name='{}' ORDER BY id"\
+        .format(argv[4])
+    cur.execute(instruc)
     rows = cur.fetchall()
     for row in rows:
         print(row)
