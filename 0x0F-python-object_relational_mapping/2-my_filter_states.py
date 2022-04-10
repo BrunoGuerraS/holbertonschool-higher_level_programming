@@ -17,12 +17,12 @@ def conection():
     cur.execute("SELECT id, name FROM states ORDER BY id ASC")
     rows = cur.fetchall()
     for row in rows:
-        if row[1] == argv[4]:
+        if row[1] == argv[4] and row[1][0] == 'A':
             print(row)
     cur.close()
     db.close()
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     conection()
 
