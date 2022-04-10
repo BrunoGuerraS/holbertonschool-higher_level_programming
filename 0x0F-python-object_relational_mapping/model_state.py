@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+'''
+Models States inherits from  base
+'''
+
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
