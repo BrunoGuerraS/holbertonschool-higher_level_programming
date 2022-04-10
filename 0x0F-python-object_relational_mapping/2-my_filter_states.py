@@ -23,4 +23,6 @@ def conection():
     db.close()
 
 
-conection()
+if __name__ = '__main__':
+    conection()
+
