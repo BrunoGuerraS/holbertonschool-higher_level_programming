@@ -21,15 +21,8 @@ if __name__ == "__main__":
     Session.configure(bind=engine)
     session = Session()
 
-    try:
-        new_state = State("Louisiana")
-        session.add(new_state)
-        session.commit()
-    finally:
-        session.close()
-
-    rows = session.query(State).filter(State.name == "Louisiana")
-
-    print(rows[0].id)
-
+    add_state = State(name="Louisiana")
+    session.add(add_state)
+    session.commit()
+    print(add_state.id)
     session.close()
