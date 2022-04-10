@@ -1,12 +1,13 @@
 #!/usr/bin/python3
+''' we start to work with MySQLdb to handle data bases'''
 import MySQLdb
 from sys import argv
 
 
 def conection():
-
+    ''' this function connect to databae '''
     try:
-        db = MySQLdb.connect(host="localhost", port=3306, user=argv[1], 
+        db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
                              passwd=argv[2], db=argv[3], charset="utf8")
     except Exception:
         print("can't connect")
