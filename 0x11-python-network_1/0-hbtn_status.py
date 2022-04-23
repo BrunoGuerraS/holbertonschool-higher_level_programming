@@ -15,4 +15,3 @@ def fetching(page):
 
 if __name__ == "__main__":
     fetching("https://intranet.hbtn.io/status")
-    
