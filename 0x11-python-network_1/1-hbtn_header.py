@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """ sends a request to the URL and displays the value """
-from urllib import parse, request
 from sys import argv
 
 
 def gethead():
+    import urllib.request
+    import urllib.parse
     """ get header information"""
     url = argv[1]
     key = "X-Request-Id"
