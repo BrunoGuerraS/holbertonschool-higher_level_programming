@@ -2,11 +2,11 @@
 """
 display values
 """
-import requests
 from sys import argv
 
 
 def foo():
+    import requests
     """displays the value of the variable"""
     url = argv[1]
     value = 'X-Request-Id'
