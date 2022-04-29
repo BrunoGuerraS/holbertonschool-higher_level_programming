@@ -1,17 +1,11 @@
 #!/usr/bin/python3
 """
-display values
+Displays the value of the variable X-Request-Id in the response header
 """
-from sys import argv
-
-
-def foo():
+if __name__ == "__main__":
     import requests
-    """displays the value of the variable"""
-    url = argv[1]
-    value = 'X-Request-Id'
-    html = requests.get(url)
-    print(html.headers.get(value))
+    from sys import argv
 
-
-foo()
+    path = argv[1]
+    res = requests.get(path)
+    print(res.headers.get("X-Request-Id"))
