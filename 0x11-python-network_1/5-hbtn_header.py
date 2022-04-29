@@ -2,7 +2,7 @@
 import requests
 from sys import argv
 
-path = argv[1]
+url = argv[1]
 value = 'X-Request-Id'
-html = requests.get(path)
+html = requests.get(url)
 print(html.headers.get(value))
