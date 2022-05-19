@@ -18,5 +18,5 @@ axios.get(url)
     console.log(totalMovies);
   })
   .catch(err => {
-    console.log('Error', err);
+    console.log('Error:', err);
   });
