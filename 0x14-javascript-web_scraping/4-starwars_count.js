@@ -9,8 +9,8 @@ axios.get(url)
     const films = res.data.results;
     const size = films.length;
     for (let i = 0; i < size; i++) {
-      films[i].characters.forEach(ch => {
-        if (ch.includes(search)) {
+      films[i].characters.forEach(per => {
+        if (per.includes(search)) {
           totalMovies++;
         }
       });
