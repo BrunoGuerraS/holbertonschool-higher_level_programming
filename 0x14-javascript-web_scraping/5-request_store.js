@@ -1,8 +1,7 @@
 #!/usr/bin/node
-// cript that gets the contents of a webpage and stores it in a file
 const axios = require('axios').default;
 const fs = require('fs');
-const [url, filePath] = process.argv.slices(2);
+const [url, filePath] = process.argv.slice(2);
 
 axios.get(url)
   .then(({ data }) => {
@@ -10,4 +9,4 @@ axios.get(url)
       if (err) console.log(err.message);
     });
   })
-  .catch(({ message }) => console.log(message));
+  .catch(({ mess }) => console.log(mess));
